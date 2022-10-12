@@ -18,7 +18,13 @@ public class Main {
 
 
         System.out.println("Задание 2");
-
+        int min = 0;
+        int max = 0;
+        for (int i = 0; i < monthMoney.length; i++) {
+if (monthMoney[i] > max) {
+    max = monthMoney[i];}
+        }
+        System.out.println(max);
 
 
 
