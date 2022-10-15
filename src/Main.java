@@ -22,22 +22,26 @@ public class Main {
         int min = 200001;
         int max = 0;
         for (int i = 0; i < monthMoney.length; i++) {
-if (monthMoney[i] > max) {
-    max = monthMoney[i];}
-if (monthMoney[i] < min) {
-    min = monthMoney[i];
-}
+            if (monthMoney[i] > max) {
+                max = monthMoney[i];
+            }
+            if (monthMoney[i] < min) {
+                min = monthMoney[i];
+            }
         }
         System.out.println("Максимальная сумма трат за день составила " + max + " рублей");
         System.out.println("Минимальная сумма трат за день составила " + min + " рублей");
 
         System.out.println("Задание 3");
         float average = (float) sum / monthMoney.length;
-            System.out.println("Средняя сумма трат за месяц составила " + average + " рублей");
+        System.out.println("Средняя сумма трат за месяц составила " + average + " рублей");
 
+        System.out.println("Задание4");
 
-
-
+        char[] reverseFullName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        for (int i = reverseFullName.length-1; i >=0; i--) {
+            System.out.print(reverseFullName[i]);
+        }
 
 
     }
